@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kwa online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>KWA online interpreter</h1>
+     <form action="/" method="post">
+         <textarea placeholder="Enter your code here..."   id="input_field" name="code">{{code}}</textarea>
+         <input id="input_button" type="submit" value="Run!">
+         <textarea    id="output" readonly="readonly">{{result}}</textarea>
+     </form>
+
+
+
+    <p>Made by <a href="https://github.com/fielaan">fielaan</a></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#input_field{
+    width: 100%;
+    height: 200px;
+
+}
+
+textarea{
+    resize: none;
+}
+
+#output{
+    width: 100%;
+    height: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+
+    bottom: 1em;
+    right: 1em;
+    text-align: right;
+
+}
+
+#input_button{
+    width:50%;
+    /*height: auto;*/
+    display: block;
+    margin: 0 auto;
+
+}
+
+body{
+    background: aliceblue;
+}
