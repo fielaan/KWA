@@ -8,12 +8,12 @@ app = Flask(__name__)
 
 @app.route('/', methods=['post', 'get'])
 def index():
+    output = "Output of your code will be shown here"
+    code = ""
     if request.method == 'POST':
         output = run_code(request.form.get("code"))
         code = request.form.get("code")
-    else:
-        output = "Output of your code will be shown here"
-        code = ""
+
     return render_template('index.html', result = output, code = code)
 
 
@@ -71,7 +71,7 @@ def run_code(code):
 
 
 
-    except Exception as e:
+    except Exception:
         output += " <Error>"
 
     if output == "":
@@ -81,4 +81,4 @@ def run_code(code):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
