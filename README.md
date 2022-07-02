@@ -8,7 +8,8 @@ EN: _To view this file in Russian, open_ __README_RU.md__
 
 * Short syntax
 * Ability to write comments directly in the code without designations
-* Availability of [online interpreter](https://kwa-online.herokuapp.com ) <tr>
+* Availability of [online interpreter](https://kwa-online.herokuapp.com ) 
+
 This list will be updated in the future
 
 ___
