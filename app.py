@@ -4,8 +4,6 @@ from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
 
-
-
 @app.route('/', methods=['post', 'get'])
 def index():
     output = "Output of your code will be shown here"
@@ -15,8 +13,6 @@ def index():
         code = request.form.get("code")
 
     return render_template('index.html', result = output, code = code)
-
-
 
 
 def run_code(code):
@@ -81,4 +77,4 @@ def run_code(code):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=1200)
