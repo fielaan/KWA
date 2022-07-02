@@ -77,4 +77,4 @@ def run_code(code):
 
 
 if __name__ == "__main__":
-    app.run(port=1200)
+    app.run()
